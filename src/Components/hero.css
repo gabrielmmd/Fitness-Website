@@ -1,0 +1,129 @@
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.animatedbg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.28;
+}
+
+.herocontent {
+  margin-top: 4%;
+}
+.herocontent h1 {
+  font-family: "Roboto";
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.herocontent h1 span {
+  color: #d80027;
+}
+.herocontent p {
+  font-family: "Roboto";
+  font-size: 19px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  padding: 2%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 960px) {
+  #hero {
+    min-height: 750px;
+  }
+  #hero .animatedbg {
+    min-height: 750px;
+  }
+  .herocontent h1 {
+    font-size: 55px;
+    margin-top: 5px;
+  }
+  .herocontent p {
+    font-size: 100%;
+    line-height: 1.6;
+    word-spacing: 0.001em;
+    margin: 20px;
+    padding: 5px;
+  }
+}
+.fitnessdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.fitnessdown .down-btn {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 80px;
+  top: 50%;
+  border-radius: 40px;
+  border: 1.5px solid #d80027;
+  box-shadow: 2px 5px 40px #d64650;
+}
+.fitnessdown .down-btn:before, .fitnessdown .down-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  height: 20px;
+  width: 20px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 1.5px solid #d80027;
+  border-top: none;
+  border-left: none;
+  -webkit-animation: scroll-down 2s ease-in-out infinite;
+          animation: scroll-down 2s ease-in-out infinite;
+}
+.fitnessdown .down-btn:before {
+  top: 30%;
+}
+@-webkit-keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}/*# sourceMappingURL=hero.css.map */

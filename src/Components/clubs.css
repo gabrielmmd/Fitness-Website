@@ -1,0 +1,181 @@
+.clubs {
+  width: 100%;
+  margin-top: 10rem;
+}
+.clubs .firstclub,
+.clubs .secondclub,
+.clubs .thirdclub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 20%;
+}
+.clubs .firstclub:hover,
+.clubs .secondclub:hover,
+.clubs .thirdclub:hover {
+  opacity: 80%;
+  transition: 2.5s ease-in-out;
+}
+.clubs .firstclub p,
+.clubs .secondclub p,
+.clubs .thirdclub p {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 80px;
+  color: white;
+  background-color: #000000;
+  transform: skewX(-5deg);
+  opacity: 100%;
+  margin: 30px;
+  padding: 10px;
+  -webkit-animation: panimation 10s ease-in-out infinite;
+          animation: panimation 10s ease-in-out infinite;
+}
+.clubs .firstclub p span,
+.clubs .secondclub p span,
+.clubs .thirdclub p span {
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+.clubs .firstclub button,
+.clubs .secondclub button,
+.clubs .thirdclub button {
+  cursor: pointer;
+  font-size: 17px;
+  height: 50px;
+  width: 250px;
+  font-family: "Roboto";
+  color: white;
+  background-color: #000000;
+  box-shadow: 5px 5px 0 #d80027;
+  border: none;
+  transform: skewX(-15deg);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.clubs .firstclub button:hover,
+.clubs .secondclub button:hover,
+.clubs .thirdclub button:hover {
+  -webkit-animation: btnhover 3s ease-in-out infinite;
+          animation: btnhover 3s ease-in-out infinite;
+}
+.clubs .firstclub {
+  background-image: url("../img/bicclub.png");
+}
+.clubs .secondclub {
+  background-image: url("../img/aerobicclub.jpg");
+}
+.clubs .thirdclub {
+  background-image: url("../img/boxclub.jpg");
+}
+
+@-webkit-keyframes btnhover {
+  0% {
+    box-shadow: 5px 5px 0px #f73936;
+  }
+  50% {
+    box-shadow: 5px 5px 0px #f736d4;
+  }
+  80% {
+    box-shadow: 5px 5px 0px #36a0f7;
+  }
+}
+
+@keyframes btnhover {
+  0% {
+    box-shadow: 5px 5px 0px #f73936;
+  }
+  50% {
+    box-shadow: 5px 5px 0px #f736d4;
+  }
+  80% {
+    box-shadow: 5px 5px 0px #36a0f7;
+  }
+}
+@-webkit-keyframes panimation {
+  0% {
+    box-shadow: 5px 5px 0px #f73936;
+  }
+  10% {
+    box-shadow: 5px 5px 0px #c4f736;
+  }
+  20% {
+    box-shadow: 5px 5px 0px #36f7b7;
+  }
+  30% {
+    box-shadow: 5px 5px 0px #f736d7;
+  }
+  40% {
+    box-shadow: 5px 5px 0px #0ba766;
+  }
+  50% {
+    box-shadow: 5px 5px 0px #36a0f7;
+  }
+  60% {
+    box-shadow: 5px 5px 0px #f73936;
+  }
+  70% {
+    box-shadow: 5px 5px 0px #f736d4;
+  }
+  80% {
+    box-shadow: 5px 5px 0px #36a0f7;
+  }
+}
+@keyframes panimation {
+  0% {
+    box-shadow: 5px 5px 0px #f73936;
+  }
+  10% {
+    box-shadow: 5px 5px 0px #c4f736;
+  }
+  20% {
+    box-shadow: 5px 5px 0px #36f7b7;
+  }
+  30% {
+    box-shadow: 5px 5px 0px #f736d7;
+  }
+  40% {
+    box-shadow: 5px 5px 0px #0ba766;
+  }
+  50% {
+    box-shadow: 5px 5px 0px #36a0f7;
+  }
+  60% {
+    box-shadow: 5px 5px 0px #f73936;
+  }
+  70% {
+    box-shadow: 5px 5px 0px #f736d4;
+  }
+  80% {
+    box-shadow: 5px 5px 0px #36a0f7;
+  }
+}
+@media screen and (max-width: 520px) {
+  .clubs {
+    margin-top: 4rem;
+  }
+  .clubs .firstclub,
+.clubs .secondclub,
+.clubs .thirdclub {
+    margin: 80px 0px 50px 0px;
+    opacity: 100%;
+  }
+  .clubs .firstclub p,
+.clubs .secondclub p,
+.clubs .thirdclub p {
+    font-size: 50px;
+    text-align: center;
+  }
+  .clubs .firstclub button,
+.clubs .secondclub button,
+.clubs .thirdclub button {
+    width: 200px;
+  }
+}/*# sourceMappingURL=clubs.css.map */

@@ -1,0 +1,59 @@
+#services {
+  width: 100%;
+  min-height: 80vh;
+}
+#services .servicescontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#services h1 {
+  font-family: "Roboto";
+  text-align: center;
+  margin-top: 7rem;
+  padding: 20px;
+  letter-spacing: 2px;
+  font-size: 60px;
+  color: white;
+}
+#services .wrapper {
+  color: #d80027;
+  padding: 50px;
+  margin-top: 5rem;
+}
+#services .wrapper:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 1px 1px 5px 5px #d80027;
+}
+#services .wrapper:hover > .icon {
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+#services .wrapper .icon {
+  height: 120px;
+  width: 100%;
+}
+#services p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1192px) {
+  #services .wrapper .icon {
+    height: 100px;
+  }
+  #services .servicescontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #services h1 {
+    font-size: 45px;
+  }
+}/*# sourceMappingURL=services.css.map */

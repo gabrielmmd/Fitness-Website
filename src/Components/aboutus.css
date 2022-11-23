@@ -1,0 +1,176 @@
+.aboutus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+.aboutus .aboutimage {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/aboutimage.jpg");
+  border-radius: 30% 100% 10% 0%/0% 100% 0% 0%;
+  opacity: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutus .aboutimage h2 {
+  font-family: "Roboto";
+  font-size: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+  letter-spacing: 12px;
+  color: white;
+}
+.aboutus .aboutimage h2 span {
+  color: white;
+  text-align: center;
+  background-image: radial-gradient(#d64650, #d80027);
+}
+.aboutus .aboutimage p {
+  font-family: "Roboto";
+  letter-spacing: 4px;
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+.aboutus .aboutimage p span {
+  color: white;
+  text-align: center;
+  background-image: radial-gradient(#d64650, #d80027);
+}
+.aboutus .aboutinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 300px;
+  margin-top: 5rem;
+  width: 50%;
+  row-gap: 25px;
+}
+.aboutus .aboutinfo h3 {
+  font-family: "Roboto";
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 50px;
+  color: white;
+}
+.aboutus .aboutinfo h3 span {
+  color: #d80027;
+}
+.aboutus .aboutinfo p {
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 17px;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  letter-spacing: 3px;
+  color: white;
+}
+.aboutus .aboutinfo p span {
+  color: #d80027;
+}
+.aboutus button {
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  font-family: "Roboto";
+  border: 1px solid #d80027;
+  background: transparent;
+  color: white;
+  box-shadow: 0 0 15px #d80027;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.aboutus button:hover {
+  background: linear-gradient(to right, #000000 10%, #d80027 50%, #d64650 100%);
+  -webkit-animation: shoot 5s ease-out infinite;
+          animation: shoot 5s ease-out infinite;
+  -webkit-animation-name: btnanimation;
+          animation-name: btnanimation;
+}
+
+@-webkit-keyframes btnanimation {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes btnanimation {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 1192px) {
+  .aboutus {
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutus .aboutimage {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .aboutus .aboutimage h2 {
+    font-size: 40px;
+  }
+  .aboutus .aboutimage p {
+    font-size: 16px;
+  }
+  .aboutus .aboutinfo {
+    height: 400px;
+    width: 100%;
+  }
+  .aboutus .aboutinfo p {
+    font-size: 100%;
+    line-height: 1.6;
+    word-spacing: 0.001em;
+    margin: 20px;
+    padding: 5px;
+  }
+  .aboutus .aboutinfo h3 {
+    font-size: 45px;
+  }
+}/*# sourceMappingURL=aboutus.css.map */

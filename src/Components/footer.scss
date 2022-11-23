@@ -1,0 +1,98 @@
+$primaryColor: #d80027;
+$secondaryColor: #d64650;
+$white: #ffff;
+$black: #000000;
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 80vh;
+  h6 {
+    font-family: 'Roboto';
+    font-size: 50px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 25px;
+    margin: 25px;
+    span {
+      background-color: $primaryColor;
+      color: $black;
+      margin: 10px;
+      padding: 3px;
+    }
+  }
+  p {
+    font-family: 'Roboto';
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $white;
+    margin: 50px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    span {
+      color: $primaryColor;
+    }
+  }
+  p:nth-of-type(2) {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .linkscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 15px;
+    .linkslist1,
+    .linkslist2,
+    .linkslist3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-decoration: none;
+      outline: none;
+      .links {
+        font-family: 'Roboto';
+        margin: 3px;
+        padding: 3px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        color: $secondaryColor;
+        text-shadow: 2px 5px 20px ($secondaryColor),
+          2px 25px 100px ($primaryColor);
+        &:hover {
+          color: $white;
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  footer {
+    h6 {
+      font-size: 40px;
+      margin-right: 1px;
+    }
+    height: 1200px;
+    p {
+      margin: 15px;
+    }
+    .linkscontainer {
+      grid-template-columns: 1fr;
+      margin: 50px;
+      .linkslist1,
+      .linkslist2,
+      .linkslist3 {
+        margin: 20px;
+      }
+    }
+  }
+}
